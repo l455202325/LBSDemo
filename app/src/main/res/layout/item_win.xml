@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:clickable="true"
+			  android:layout_width="match_parent"
+			  android:background="@drawable/pop_img"
+			  android:layout_height="wrap_content">
+<ImageView
+	android:id="@+id/pop_img"
+	android:layout_width="100dp"
+	android:layout_height="100dp"/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/pop_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp">
+
+
+		<TextView
+			android:id="@+id/pop_price"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/holo_red_light"
+			android:text="¥12.30"
+			android:textSize="14sp"/>
+		<TextView
+			android:id="@+id/pop_jl"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:textColor="@android:color/holo_red_light"
+			android:text="距离：1公里"/>
+		</LinearLayout>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<TextView
+				android:id="@+id/btn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"
+				android:text="到这去"
+				android:padding="10dp"
+				android:clickable="true"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentRight="true"/>
+		</RelativeLayout>
+	</LinearLayout>
+
+</LinearLayout>

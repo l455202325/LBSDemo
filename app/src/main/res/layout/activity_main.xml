@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.fecmobile.lbsdemo.MainActivity">
+
+	<HorizontalScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="distanceJin"
+				android:text="距离最近"
+				android:clickable="true"
+				android:textSize="12sp"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="distanceYuan"
+				android:text="距离最远"
+				android:clickable="true"
+				android:textSize="12sp"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="priceSheng"
+				android:text="价格升序"
+				android:clickable="true"
+				android:textSize="12sp"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="priceJiang"
+				android:text="价格降序"
+				android:clickable="true"
+				android:textSize="12sp"/>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:onClick="toMap"
+				android:scaleType="center"
+				android:src="@mipmap/map_icon"
+				/>
+		</LinearLayout>
+	</HorizontalScrollView>
+
+	<ListView
+		android:id="@+id/listView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		/>
+</LinearLayout>
